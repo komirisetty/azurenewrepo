@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+  labels:
+    app: .netcore
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: .netcore
+  template:
+    metadata:
+      labels:
+        app: .netcore
+    spec:
+      containers:
+      - name: mycontainer
+        image: foodyhiveacr.azurecr.io/komirisettyazuremaintest:default
