@@ -3,16 +3,21 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: netcore
+    app1: netcore
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: netcore
+      app1: netcore
   template:
     metadata:
       labels:
-        app: netcore
+        app1: netcore
+        app: {{ template "gateway.name" . }}
+        draft: {{ default "draft-app" .Values.draft }}
+        release: {{ .Release.Name }}
+      annotations:
+        buildID: {{ .Values.buildID | quote }}
     spec:
       containers:
       - name: mycontainer
