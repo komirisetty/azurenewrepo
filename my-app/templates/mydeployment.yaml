@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    app: .netcore
+    app: netcore
 spec:
   replicas: 1
   selector:
