@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: .netcore
+      app: netcore
   template:
     metadata:
       labels:
-        app: .netcore
+        app: netcore
     spec:
       containers:
       - name: mycontainer
