@@ -13,7 +13,6 @@ spec:
     metadata:
       labels:
         app1: netcore
-        app: {{ template "gateway.name" . }}
         draft: {{ default "draft-app" .Values.draft }}
         release: {{ .Release.Name }}
       annotations:
