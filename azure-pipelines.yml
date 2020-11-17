@@ -44,8 +44,7 @@ stages:
         kubernetesCluster: 'foodyhive-aks'
         useClusterAdmin: true
         namespace: 'default'
-        command: install
+        command: update
         chartType: FilePath
         chartPath: my-app
-        releaseName: azuredevopsdemo
       displayName: 'Deploy to aks cluster'
