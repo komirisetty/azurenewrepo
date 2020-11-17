@@ -47,4 +47,5 @@ stages:
         command: upgrade
         chartType: FilePath
         chartPath: my-app
+        releaseName: myrelease
       displayName: 'Deploy to aks cluster'
