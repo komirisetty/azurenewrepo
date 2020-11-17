@@ -45,7 +45,7 @@ stages:
         useClusterAdmin: true
         namespace: 'default'
         command: upgrade
-        arguments: --debug --dry-run
+        arguments: --reset-values
         chartType: FilePath
         chartPath: my-app
         releaseName: myrelease
