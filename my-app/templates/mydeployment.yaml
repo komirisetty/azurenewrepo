@@ -4,8 +4,6 @@ metadata:
   name: my-deployment
   labels:
     app1: netcore
-    app.kubernetes.io/name: my-deployment
-    app.kubernetes.io/instance: my-deployment-aks
 spec:
   replicas: 1
   selector:
