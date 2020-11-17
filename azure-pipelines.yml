@@ -44,7 +44,7 @@ stages:
         kubernetesCluster: 'foodyhive-aks'
         useClusterAdmin: true
         namespace: 'default'
-        command: install
+        command: upgrade
         chartType: FilePath
         chartPath: my-app
       displayName: 'Deploy to aks cluster'
