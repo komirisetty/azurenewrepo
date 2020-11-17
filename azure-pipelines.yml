@@ -47,4 +47,5 @@ stages:
         command: install
         chartType: FilePath
         chartPath: my-app
+        releaseName: azuredevopsdemo
       displayName: 'Deploy to aks cluster'
