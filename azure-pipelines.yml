@@ -35,7 +35,7 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          "{build.buildId}"
+          default
     - task: HelmDeploy@0
       inputs:
         connectionType: 'Azure Resource Manager'
