@@ -46,7 +46,6 @@ stages:
         useClusterAdmin: true
         command: delete
         arguments: myrelease
-        releaseName: myrelease
         namespace: 'default'
       displayName: 'helm remove from aks cluster'
     - task: HelmDeploy@0
