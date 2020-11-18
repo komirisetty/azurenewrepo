@@ -44,7 +44,7 @@ stages:
         azureResourceGroup: 'foodyhive'
         kubernetesCluster: 'foodyhive-aks'
         useClusterAdmin: true
-        command: uninstall
+        command: delete
         arguments: --purge
         releaseName: myrelease
         namespace: 'default'
