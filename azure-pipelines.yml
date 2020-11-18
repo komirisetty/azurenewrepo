@@ -46,6 +46,8 @@ stages:
         useClusterAdmin: true
         namespace: 'default'
         command: uninstall
+        chartType: FilePath
+        chartPath: my-app
         releaseName: myrelease
       displayName: 'helm remove from aks cluster'
     - task: HelmDeploy@0
