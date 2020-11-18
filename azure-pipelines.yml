@@ -45,7 +45,7 @@ stages:
         useClusterAdmin: true
         namespace: 'default'
         command: upgrade
-        arguments: --reuse-values
+        arguments: --reset-values
         chartType: FilePath
         chartPath: my-app
         releaseName: myrelease
