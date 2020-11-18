@@ -20,6 +20,7 @@ spec:
     {{- end }}
       labels:
         {{- include "my-app.selectorLabels" . | nindent 8 }}
+        date: date +'%s'
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
