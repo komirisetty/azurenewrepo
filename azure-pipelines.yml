@@ -37,7 +37,7 @@ stages:
         tags: |
           default
 
-    - task: Helmremove@0
+    - task: HelmDeploy@0
       inputs:
         connectionType: 'Azure Resource Manager'
         azureSubscription: 'Azure Pass - Sponsorship(3244b50c-81fc-4251-80c2-f041527ed98e)'
