@@ -8,7 +8,7 @@ image:
   repository: foodyhiveacr.azurecr.io/komirisettyazuremaintest
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "default"
+  tag: {{build.buildId}}
 
 imagePullSecrets: []
 nameOverride: ""
