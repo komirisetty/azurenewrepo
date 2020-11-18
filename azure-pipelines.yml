@@ -45,7 +45,6 @@ stages:
         kubernetesCluster: 'foodyhive-aks'
         useClusterAdmin: true
         command: delete
-        arguments: --purge
         releaseName: myrelease
         namespace: 'default'
       displayName: 'helm remove from aks cluster'
