@@ -36,6 +36,18 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           default
+
+    - task: Helmremove@0
+      inputs:
+        connectionType: 'Azure Resource Manager'
+        azureSubscription: 'Azure Pass - Sponsorship(3244b50c-81fc-4251-80c2-f041527ed98e)'
+        azureResourceGroup: 'foodyhive'
+        kubernetesCluster: 'foodyhive-aks'
+        useClusterAdmin: true
+        namespace: 'default'
+        command: uninstall
+        releaseName: myrelease
+      displayName: 'helm remove from aks cluster'
     - task: HelmDeploy@0
       inputs:
         connectionType: 'Azure Resource Manager'
