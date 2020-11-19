@@ -56,7 +56,7 @@ stages:
         kubernetesCluster: 'foodyhive-aks'
         useClusterAdmin: true
         namespace: 'default'
-        command: upgrade
+        command: install
         arguments: --reset-values
         chartType: FilePath
         chartPath: my-app
