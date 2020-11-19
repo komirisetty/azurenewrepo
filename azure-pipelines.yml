@@ -57,7 +57,6 @@ stages:
         useClusterAdmin: true
         namespace: 'default'
         command: install
-        arguments: --reset-values
         chartType: FilePath
         chartPath: my-app
         releaseName: myrelease
