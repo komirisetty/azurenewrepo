@@ -6,7 +6,6 @@ metadata:
   name: my-service
 spec:
   type: LoadBalancer
-  loadBalancerIP: 52.141.211.167
   selector:
     app: nginx
   ports:
